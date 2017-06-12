@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ben Mitchell - Web Developer</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="./index.html" class="brand-logo">Ben Mitchell</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#social">Social</a></li>
+        <li><a href="files/BenMitchell_Resume-WebDeveloper.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Social</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-1">Junior Web Developer</h1>
+        <div class="row center">
+          <h5 class="header col s12">Experienced in React, Node, MongoDB, and Express</h5>
+        </div>
+        <div class="row center">
+          <a href="#contact" id="download-button" class="btn-large waves-effect waves-light teal">Get in touch</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img class="" src="./img/DSC_8917.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center pink-text"><i class="material-icons">favorite</i></h2>
+            <h5 class="center">Full Stack</h5>
+
+            <p class="light">Front end experience using material design principles. Backend experience working with both SQL and NoSQL dbs.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center pink-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">I believe in building applications that people enjoy using.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center pink-text"><i class="material-icons">cached</i></h2>
+            <h5 class="center">Lifelong Learner</h5>
+
+            <p class="light">Formerly an operations manager in the technology sector, I was drawn to the world of development when I embarked on building a company of my own in 2016. I strive to always be building on past experiences.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4>Portfolio</h4>
+          <div class="carousel carousel-slider">
+            <div class="carousel-item center">
+              </br></br></br>
+              <a href="https://cadencebot.com" target="_blank" rel="noopener noreferrer"><img src="img/hero-banner-new.png"></a>
+            </div>
+            <div class="carousel-item center">
+              </br></br>
+              <a href="https://getcadence.com" target="_blank" rel="noopener noreferrer"><img src="img/trouble-high-seas.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/DSC_8917.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Get in touch</h5>
+          <!--<p class="grey-text text-lighten-4"></p>-->
+          <div class="row">
+            <form id="contact" class="col s12 white-text" action="https://formspree.io/ben.mitchell01+willbenmitch@gmail.com" method="POST">
+              <div class="row">
+                <div class="input-field col s12 l6">
+                  <input id="first_name" type="text" name="first_name" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12 l6">
+                  <input id="last_name" type="text" name="last_name" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" name="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="content" type="textarea" name="content" class="materialize-textarea"></textarea>
+                      <label for="content" data-error="wrong" data-success="right">Write me a message</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input type="submit" name="submit" class="btn"/>
+            </form>
+          </div>
+
+
+        </div>
+        <div id="portfolio" class="col l3 s12">
+          <h5 class="white-text">Projects</h5>
+          <ul>
+            <li><a class="white-text" href="http://getcadence.com" target="_blank" rel="noopener noreferrer">Cadence</a></li>
+            <li><a class="white-text" href="http://cadencebot.com" target="_blank" rel="noopener noreferrer">CadenceBot</a></li>
+            <li><a class="white-text" href="#!">NEO</a></li>
+            <li><a class="white-text" href="#!">ML Photo Filter</a></li>
+          </ul>
+        </div>
+        <div id="social" class="col l3 s12">
+          <h5 class="white-text">Social</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/willbenmitchell/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a class="white-text" href="https://github.com/willbenmitch" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a class="white-text" href="https://twitter.com/WillBenMitchell" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a class="white-text" href="#!">Medium</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Built using <a class="pink-text text-lighten-4" href="http://materializecss.com" target="_blank" rel="noopener noreferrer">Materialize</a> by Ben Mitchell - 2017
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
