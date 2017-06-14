@@ -7899,24 +7899,33 @@ Picker.extend( 'pickadate', DatePicker )
         }
 
         function click(e) {
-          // Disable clicks if carousel was dragged.
-          if (dragged) {
-            e.preventDefault();
-            e.stopPropagation();
-            return false;
+      // Disable clicks if carousel was dragged.
+      if (dragged) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
 
-          } else if (!options.fullWidth) {
-            var clickedIndex = $(e.target).closest('.carousel-item').index();
-            var diff = (center % count) - clickedIndex;
+      } else if (!options.fullWidth) {
+        var clickedIndex = $(e.target).closest('.carousel-item').index();
+        var diff = (center % count) - clickedIndex;
 
-            // Disable clicks if carousel was shifted by click
-            if (diff !== 0) {
-              e.preventDefault();
-              e.stopPropagation();
+        // Account for wraparound.
+        if (!options.noWrap) {
+            if (diff < 0) {
+                if (Math.abs(diff + count) < Math.abs(diff)) { diff += count; }
+            } else if (diff > 0) {
+                if (Math.abs(diff - count) < diff) { diff -= count; }
             }
-            cycleTo(clickedIndex);
-          }
         }
+
+        // Disable clicks if carousel was shifted by click
+        if (diff !== 0) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        cycleTo(clickedIndex);
+      }
+    }
 
         function cycleTo(n) {
           var diff = (center % count) - n;
